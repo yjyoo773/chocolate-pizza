@@ -1,0 +1,293 @@
+body {
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 16.5px;
+    color: #585858
+}
+
+h1,
+h2 {
+    color: #222222;
+}
+
+p {
+    text-indent: 30px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin: auto;
+    /* padding: 36px 180px 80px; */
+    padding: 0 180px;
+    max-width: 900px;
+    position: relative;
+}
+
+.subtitle {
+    font-family: 'Abel', sans-serif;
+    font-weight: 200;
+}
+
+/* Font Sizes */
+.pix-42 {
+    font-size: 42px;
+}
+
+.pix-40 {
+    font-size: 40px;
+}
+
+.pix-24 {
+    font-size: 24px;
+}
+
+.pix-22 {
+    font-size: 22px;
+}
+
+.pix-16 {
+    font-size: 16px;
+}
+
+.pix-14 {
+    font-size: 14px;
+}
+
+.pix-12 {
+    font-size: 12px;
+}
+
+/* Heading */
+.header {
+    padding: 36px 180px 0;
+}
+
+.head-logo {
+    float: left;
+    margin-right: 6px;
+    /* background:url(img/logo.png) ;
+    height: 45px;
+    width: 42px; */
+}
+
+.blog-title {
+    font-family: 'Yellowtail', cursive;
+    display: block;
+    position: relative;
+    bottom: 15px;
+    margin: 0;
+}
+
+.blog-desc {
+    padding-bottom: 30px;
+    margin: -26px 0 0 52px;
+    color: #888888;
+}
+
+.contact {
+    /* float:right; */
+    position: absolute;
+    display: inline-block;
+    right: 180px;
+    top: 48px
+}
+
+.rss {
+    margin-left: 8px;
+}
+
+/* Content */
+.food-name {
+    font-family: 'Oswald', sans-serif;
+    height: 44px;
+    margin-top: 44px;
+    margin-bottom: 9px;
+}
+
+.content-sub {
+    display: inline;
+    color: #CCCCCC
+}
+
+.print {
+    position: absolute;
+    right: 180px;
+    display: inline;
+}
+
+.food-img {
+    margin-top: 32px;
+    margin-bottom: 13px;
+}
+
+/* Ingredient List */
+.ingredient {
+    background: url(img/list-bg.png);
+    max-width: 100%;
+    height: 300px;
+    font-family: 'Patrick Hand', cursive;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.ingredient::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    position: relative;
+    top: 20px;
+    float: left;
+    width: 50%;
+}
+
+.ingredient-table {
+    padding: 36px;
+    margin-left: 54px;
+    text-align: left;
+    max-width: 775px;
+
+}
+
+tr {
+    width: 770px;
+}
+
+td {
+    vertical-align: baseline;
+    width: 59%;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+td input {
+    position: absolute;
+    top: 6px;
+    left: -24px;
+    visibility: hidden;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+td .checkbox-custom {
+    position: absolute;
+    top: 6px;
+    left: -24px;
+    height: 12px;
+    width: 12px;
+    border-radius: 3px;
+    border: 1px solid #8c7d70;
+}
+
+.checkbox-custom:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -24px;
+    display: none;
+}
+
+td input:checked~.checkbox-custom:after {
+    display: block;
+}
+
+td .checkbox-custom:after {
+    left: 4px;
+    top: -3px;
+    width: 5px;
+    height: 10px;
+    border: solid #8c7d70;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.crossout {
+    text-decoration: line-through;
+}
+
+/* Author Note */
+.author-note {
+    margin-top: 20px;
+    margin-bottom: 88px
+}
+
+.van-pic {
+    /* margin-top: 20px; */
+}
+
+.author-name {
+    position: absolute;
+    top: -27px;
+    margin-left: 88px;
+}
+
+.author-desc {
+    position: absolute;
+    top: 14px;
+    text-indent: 0px;
+    margin-left: 88px;
+}
+
+.share {
+    font-family: sans-serif;
+    font-weight: 100;
+    width: 180px;
+    height: 50px;
+    color: white;
+    background-color: #bc544b;
+    position: absolute;
+    right: 180px;
+    top: 13px;
+    border: none;
+}
+
+/* Footer */
+hr {
+    background: url(img/small-logo.png) no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 18px;
+    border: 0;
+    position: relative;
+}
+
+hr:before,
+hr:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #ebecf0;
+    height: 2px;
+    top: 8px;
+}
+
+hr:before {
+    left: 0;
+    right: 50%;
+    margin-right: 15px;
+}
+
+hr:after {
+    right: 0;
+    left: 50%;
+    margin-left: 15px;
+}
+
+.footing {
+    margin-top: 32px;
+    text-align: center;
+    color: #888888;
+}
